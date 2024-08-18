@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="weather-app">
+        <div class="city" id="location">
+            <h1></h1>
+            <div class="temperature" id="currentTemp"></div>
+            <div class="weather-condition" id="weatherCondition"></div>
+            <div class="temp-range" id="temperatureRange">H: XX° L: XX°</div>
+        <div class="hourly-forecast" id="hourlyForecast"></div>
+        <div class="forecast-container">
+            <div class="header">
+                <h2>4-DAY FORECAST</h2>
+            </div>
+            <div class="forecast-row">
+                <span class="day-label">Today</span>
+                <span class="forecast-icon"><i class="fa-solid fa-cloud"></i></span>
+                <span class="day-temperature">28°</span>
+                <div class="temp-bar">
+                    <div class="bar-filled" style="width: 30%;"></div>
+                </div>
+                <span class="max-temp">36°</span>
+            </div>
+            <div class="forecast-row">
+                <span class="day-label">Tue</span>
+                <span class="forecast-icon"><i class="fa-solid fa-cloud-showers-water"></i></span>
+                <span class="day-temperature">29°</span>
+                <div class="temp-bar">
+                    <div class="bar-filled" style="width: 40%;"></div>
+                </div>
+                <span class="max-temp">34°</span>
+            </div>
+            <!-- Additional forecast rows for other days -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
